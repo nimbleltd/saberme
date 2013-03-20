@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/vendor/zepto.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script>
+			{
+			  // specify the class used for active dropdowns
+			  activeClass: 'open'
+			}
+  </script>
+
+</head>
+<body class="antialiased">
+
+	    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="/">SaberMe.com</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+<!--           <li class="divider"></li>
+          <li><a href="/grid.php">Chose Video</a></li>
+          <li class="divider"></li>
+          <li><a href="/templates.php">Rotoscope</a></li>
+          <li class="divider"></li> -->
+          <li><a href="/docs/" data-dropdown="contentDrop">My SaberMe's &raquo;</a></li>
+          <li class="divider"></li>
+          <li><a href="#">My Account</a></li>
+          <li class="divider"></li>
+          <li><a href="#">What is SaberMe?</a></li>
+          <li class="divider"></li>
+          <li class="has-form">
+            <a href="#" class="button">Login</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+<ul class="breadcrumbs">
+  <li><a href="#">Chose Video</a></li>
+  <li><a href="#">Frames Created</a></li>
+  <li><a href="#">Rotoscope</a></li>
+  <li class="current"><a href="#">Review</a></li>
+<!--   <li class="unavailable"><a href="#">Approved</a></li> -->
+  <li class="unavailable"><a href="#">Upload/Save</a></li>
+</ul>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="small-5 columns">
+				<h1>SaberMe</h1>
+			</div>
+			<div class="small-5 columns">
+			</br>
+				<h3>Project:</h3>
+			</div>
+		</div>
+	</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr/>
+<div class="section-container accordion" data-section>
+ 	<section class="section">
+    	<p class="title"><a href="#">Chose Video</a></p>
+    	<div class="content">
+			<div class="row">
+				<div class="large-12 columns">
+					
+					<span data-tooltip class="has-tip tip-top" title="Currently Only Youtube and Vimeo are supported"><h3>Chose your Video</h3></span>
+					<div class="small-10 columns">
+						<input type="text" placeholder="Paste Youtube URL...">
+					</div>
+					<div class="small-2 columns">
+						<a href="#" class="button prefix">Submit</a>
+					</div>
+						<br/><br/><br/><br/>
+					<div class="progress large-10 secondary round"><span class="meter" style="width: 40%"></span><p>Downloading Footage...</p></div>
+
+				</div>
+    		</div> 
+    	</div>
+  	</section> 
+<!-- <hr/> -->
+<div class="section accordion" data-section>
+  	<section class="section">
+    	<p class="title"><a href="#">Frame Being Created...</a></p>
+    	<div class="content">
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="progress large-10 success round"><span class="meter" style="width: 100%"></span><p>Writing Sequence Complete!</p></div>
+				</div>
+    		</div> 
+    	</div>
+  	</section> 
+</div> 
+
+<div class="section accordion" data-section>
+  	<section class="section">
+    	<p class="title"><a href="#">Rotoscope</a></p>
+    	<div class="content">
+			<div class="row">
+				<div class="large-12 columns">
+<p> place holder for frames here...</p>
+<img src="img/userFootage/userFootage.00136.png"/>
+				</div>
+    		</div> 
+    	</div>
+  	</section> 
+</div> 
+
+<div class="section accordion" data-section>
+  	<section class="section">
+    	<p class="title"><a href="#">Review</a></p>
+    	<div class="content">
+			<div class="row">
+				<div class="large-12 columns">
+					<h2>Review Progress</h2>
+					<img src="img/userFootage/userFootage.00136.png"/>
+					<h3>
+						<a href="#" class="small button round">Generate Preview</a>
+						<a href="#" class="small button round success">Approved!</a>
+					</h3>
+					<div class="progress large-10 secondary round"><span class="meter" style="width: 20%"></span><p>Writing Composited Footage...</p></div>
+				</div>
+    		</div> 
+    	</div>
+  	</section> 
+</div> 
+
+
+<div class="section accordion" data-section>
+  	<section class="section">
+    	<p class="title"><a href="#">Upload/Save</a></p>
+    	<div class="content">
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="small-5 columns">
+						<h3>Upload video to your video sharing site:</h3>
+						<img src="img/userFootage/userFootage.00136.png"/>
+						<h3>
+							<a href="#" class="small button round success">Upload</a>
+						</h3>
+					<div class="progress large-10 secondary round"><span class="meter" style="width: 20%"></span><p>Writing Composited Footage...</p></div>
+					</div> <!-- close small-6 columns -->
+
+					<div class="small-5 columns">
+						<h3>Download File to your computer</h3>
+						<img src="img/userFootage/userFootage.00136.png"/>
+						<h3>
+							<a href="#" class="small button round success">Download</a>
+						</h3>
+					</div> <!--close right side-->
+
+				</div>
+    		</div> 
+    	</div>
+  	</section> 
+</div> 
+
+
+</div>
+</div>
+<hr/>
+
+<!-- Dropdown Content -->
+<div id="contentDrop" class="f-dropdown content small" data-dropdown-content>
+  <h4>Solo Saber</h4>
+  A video of someone's kid whacking away.
+  <img src="img/userFootage/userFootage.00159.png">
+  <!-- <p>More test.</p> -->
+<!--   <a href="#" class="button">Button</a>  -->
+<br>
+<br>
+
+  <h4>Backyard Battle</h4>
+  Billy stuck in the belly.
+  <img src="img/projectImages/lightsaber01.jpg">
+  <!-- <p>More test.</p> -->
+<!--   <a href="#" class="button">Button</a>  -->
+<br>
+<br>
+  <h4>Dorkman vs. Andy</h4>
+  Huge battle.
+  <img src="img/projectImages/lightsaber02.png">
+  <!-- <p>More test.</p> -->
+<!--   <a href="#" class="button">Button</a>  -->
+<br>
+<br>
+</div>
+
+
+
+<!-- END: Dropdown Content -->
+
+<!-- Dropdown Button -->
+<!-- <a href="#" class="button" data-dropdown="contentDrop">Your Other SaberMe Videos &raquo;</a> -->
+
+<!-- Modal to upload to Youtube via Youtube API -->
+
+
+
+
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
