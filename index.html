@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesBezier.css" />
 
   
 
@@ -17,6 +19,11 @@
   <script src="js/foundation/foundation.js"></script>
   <script src="js/vendor/zepto.js"></script>
   <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/jquery.js"></script>
+
+  <script src="js/colorpicker.js"></script>  
+  <script src="js/popcorn.js"></script>
+  <script src="js/app.js"></script>
   <script>
 			{
 			  // specify the class used for active dropdowns
@@ -128,9 +135,24 @@
     	<p class="title"><a href="#">Rotoscope</a></p>
     	<div class="content">
 			<div class="row">
-				<div class="large-12 columns">
-<p> place holder for frames here...</p>
-<img src="img/userFootage/userFootage.00136.png"/>
+				<div class="large-12 columns rotoVideo">
+              <canvas id="canvas" width="960px" height="540px" class="bezier" style="blend-mode: hue; position: absolute; top: 0px; left: 0px; z-index: 2; "></canvas>
+              
+              <div style="position: absolute; top:540px">
+
+                <button id="reset" alt="back to beginning">|<</button>
+                <button id="advance-rw" alt="advance last frame"><<</button>
+                <button id="advance-fw" alt="advance next frame">>></button>
+                
+                <button id="playback" alt="play">></button>
+
+                <input id="colorpicker" type="text" alt="enter a color" placeholder="click to select color">
+                <input id="sizepicker" type="range" alt="choose size" max="10" value="3">    
+                
+                <span>Current Frame: <span id="time">0</span></span>
+              </div>  
+
+
 				</div>
     		</div> 
     	</div>
@@ -273,5 +295,6 @@
   <script>
     $(document).foundation();
   </script>
+   <script src="js/saberMaker.js"></script>
 </body>
 </html>
