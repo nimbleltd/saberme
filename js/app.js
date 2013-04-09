@@ -1,4 +1,8 @@
 /*
+ *  Edited by Paul Campbell for simple rotoscope application 
+ *
+ * 
+ *
  * Rotoscoper app.js
  * https://github.com/boazsender/Rotoscoper
  *
@@ -10,7 +14,8 @@
  * Canvas drawing code based on work from Mike Taylor's home page
  * "_MT.CanvasDrawr" at http://miketaylr.com
  *
- */
+ * Use in console to delete localStorage: window.localStorage.clear();
+ */ 
 
 (function( global, $ ) {
 
@@ -108,7 +113,6 @@
   };
   
   Frame.prototype.saveFrameData = function() {
-
     var _storage = this.storage();
 
     _storage[ ((this.kernal.currentTime().toFixed( 1 ))*10) + ''] = this.context.canvas.toDataURL();
